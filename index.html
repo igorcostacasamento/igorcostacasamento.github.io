@@ -17,7 +17,7 @@
 	<body class="landing">
 
 		<!-- Page Wrapper -->
-			<div id="page-wrapper" class="slide bansld">
+			<div id="page-wrapper" class="bansld">
 
 				<!-- Header -->
 					<header id="header" class="alt">
@@ -41,7 +41,7 @@
 					</header>
 
 				<!-- Banner -->
-					<section id="banner">
+					<section id="banner" class="slide">
 						<div class="inner">
 							<h2>Igor & Rayane</h2>
 							<!--<p>Another fine responsive<br />
@@ -137,7 +137,7 @@
 						<div class="inner">
 							<header class="major">
 								<h2>Local da Cerimônia e Festa</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend</p><br />
+								<!--<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend</p><br />-->
 							<div id="map" class="col-sm-12 col-md-12 col-lg-12 mapa" style="width: 100%; height:350px; position: relative; overflow: hidden; transform: translateZ(0px); padding: 0; margin-top: 10px;">
 	            	<script src="https://maps.googleapis.com/maps/api/js?signed_in=true&libraries=places&callback=initMapDirection" async defer></script>
 	            </div>
@@ -148,7 +148,7 @@
 											<input type="text" name="demo-name" id="origem_rota" value="" placeholder="Local de partida" />
 										</div>
 										<ul class="actions">
-											<li><a href="#" id="tracarRota" class="button special icon fa-search">Traçar Rota</a></li>
+											<li><a href="#" id="tracarRota" name="tracarRota" onclick="javascript:function(){return false}" class="button special icon fa-search">Traçar Rota</a></li>
 										</ul>
 									</div>
 								</form>
@@ -211,6 +211,6 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/comum.js"></script>
 			<script src="assets/js/maps.js"></script>
-
+			<!--<script src="assets/js/modernizr.custom.86080.js"></script>-->
 	</body>
 </html>

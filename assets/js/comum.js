@@ -1,24 +1,39 @@
 $(document).ready(function(){
-  setTimeout(slide1,10000);
+  //setTimeout(slide1,10000);
+
+  //impede que ao clicar va para o topo da tela
+  $('#tracarRota').click(function(e){
+    e.preventDefault();
+    return false;
+  });
 });
 
+
 function slide1(){
-  /*$('.bansld').removeClass('bansld').addClass('bansld2');*/
-  fadeOutClass ('slide', 'bansld2', 'bansld');
+  $('.bansld').fadeOut('slow',function(){
+    $('.bansld2').fadeIn('slow');
+  });
+  //$('.bansld').removeClass('bansld').addClass('bansld2');
+  //fadeOutClass ('slide', 'bansld2', 'bansld');
   //fadeInClass ('slide', 'bansld2');
   setTimeout(slide2,5000);
 }
 
 function slide2(){
-  /*$('.bansld2').removeClass('bansld2').addClass('bansld3');*/
-  fadeOutClass ('slide', 'bansld3', 'bansld2');
+  $('.bansld2').fadeOut('slow',function(){
+    $('.bansld').fadeIn('slow');
+  });
+
+  //$('.bansld2').removeClass('bansld2').addClass('bansld3');
+  //fadeOutClass ('slide', 'bansld3', 'bansld2');
   //fadeInClass ('slide', 'bansld3');
-  setTimeout(slide3,5000);
+  //setTimeout(slide3,5000);
+  setTimeout(slide1,5000);
 }
 
 function slide3(){
-  /*$('.bansld3').removeClass('bansld3').addClass('bansld');*/
-  fadeOutClass ('slide', 'bansld', 'bansld3');
+  $('.bansld3').removeClass('bansld3').addClass('bansld');
+  //fadeOutClass ('slide', 'bansld', 'bansld3');
   //fadeInClass ('slide', 'bansld');
   setTimeout(slide1,5000);
 }
